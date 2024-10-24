@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <title>Social Links Profile</title>
+  <link rel="stylesheet" href="/styles/web.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="social-link-container">
+    <div class="profile">
+      <div class="image-holder-div">
+        <img src="/assets/images/IMG_E7027.JPG" alt="PROFILE">
+      </div>
+      <div class="desc">
+        <div class="personal-details">
+          <div class="name">Obembe Eyitayo David</div>
+          <div class="location">Lagos, Nigeria</div>
+        </div>
+        <div class="detailed-desc">"Front-end developer and avid reader."</div>
+      </div>
+      
+    </div>
+    <div class="links">
+      <a href="" target="_blank">GitHub</a>
+      <a href="" target="_blank">Frontend Mentor</a>
+      <a href="https://www.linkedin.com/in/eyitayo-obembe-a0163b328/?lipi=urn%3Ali%3Apage%3Ad_flagship3_trust_verifications_default_persona_start%3BhlCWvGPjRC2yeSLfBMx%2FnQ%3D%3D" target="_blank">LinkedIn</a>
+      <a href="" target="_blank">Twitter</a>
+      <a href="" target="_blank">Instagram</a>
+      <a href="https://tiktok.com/@davistar21/video/7365912043477634320?lang=en" target="_blank">TikTok</a>
+      <a href="" target="_blank">Facebook</a>
+      <a href="" target="_blank">YouTube</a>
+      <a href="" target="_blank">Stack Overflow</a>
+      <i class="fa-solid fa-user"></i>
+      <i class="fab fa-python"></i>
+      <i class="fa-solid fa-home"></i>
+      <i class="fa-solid fa-sun"></i>
+      <i class="fa-solid fa-moon"></i>
+      <i class="fab fa-js"></i>
+      <i class="fab fa-linkedin"></i>
+      <i class="fab fa-tiktok"></i>
+      <i class="fab fa-facebook"></i>
+      <a href="" target="_blank">Snapchat</a>
+    </div> 
+  </div>
+  <div class="circular-progress">
+    <svg>
+      <circle cx="70" cy="70" r="70"></circle>
+      <circle cx="70" cy="70" r="70" id="progressCircle"></circle>
+    </svg>
+    <div class="gpa-text">
+      <span id="gpaPercentage">80%</span>
+      <p>GPA: <span id="gpaValue">4</span>/5</p>
+    </div>
+  </div>
+
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Hi, I'm John Doe</h1>
+        <p>Front-End Developer & UX Enthusiast</p>
+        <a href="#projects" class="cta-btn">View My Work</a>
+      </div>
+      <div class="hero-image">
+        <img src="/assets/images/IMG_E7027.JPG" alt="John Doe">
+      </div>
+    </div>
+    <div class="hero-socials">
+      <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+  </section>
+  
+
+  
+  <script>
+    const gpa = 3.3; // Current GPA
+    const maxGpa = 5; // Maximum GPA
+    // Calculate percentage
+    const percentage = (gpa / maxGpa) * 100;
+    const circle = document.getElementById('progressCircle');
+    const gpaPercentage = document.getElementById('gpaPercentage');
+    const gpaValue = document.getElementById('gpaValue');
+
+    // Calculate the dashoffset based on the percentage
+    const dashoffset = 440 - (440 * percentage) / 100; // 440 is full circumference
+
+    // Set the stroke-dashoffset and update GPA text
+    circle.style.strokeDashoffset = dashoffset;
+    gpaPercentage.innerText = percentage.toFixed(0) + '%';
+    gpaValue.innerText = gpa;
+
+  </script>
+</body>
+</html>

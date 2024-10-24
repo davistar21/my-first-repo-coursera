@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+body{
+    font-family: 'Inter';
+    margin: 0;
+    background-color: hsl(0, 0%, 8%);
+    color: white;
+}
+.social-link-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 100px auto;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 10px;
+    width: 65%;
+    padding: 40px;
+    gap: 20px;
+    align-items: center;
+}
+.profile{
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    justify-content: center;
+}
+.image-holder-div{
+    margin: auto;
+}
+.profile img{
+    width: 80px;
+    height: auto;
+    border-radius: 50px;
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    text-align: center;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.links a{
+    background-color: hsl(0, 0%, 20%);
+    padding: 10px;
+    width: 80%;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.15s;
+    font-size: 20px;
+    border: 1px solid hsl(0, 0%, 20%);
+    border-radius: 8px;
+}
+.links a:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: black;
+}
+.links a:active{
+    background-color: hsla(75, 94%, 57%, 0.7);
+    color: black;
+}
+
+.name{
+    font-size:30px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+.location{
+    color: hsl(75, 94%, 57%);
+    font-weight: 600;
+    font-size: 20px;
+}
+.detailed-desc{
+    opacity: 0.8;
+    font-size: 20px;
+}
+
+
+
+@media (max-width: 1000px) {
+    .social-link-container{
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+    }
+    .links{
+
+    }
+    .profile{
+        margin: 30px 0;
+    }   
+}
+.circular-progress {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 100px auto;
+  }
+  
+  .circular-progress svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(-90deg); /* Rotating to start the circle from the top */
+  }
+  
+  .circular-progress circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+  }
+  
+  .circular-progress circle:first-child {
+    stroke: #e0e0e0; /* Background circle color */
+  }
+  
+  .circular-progress circle:last-child {
+    stroke: #4caf50; /* Progress bar color */
+    stroke-dasharray: 440; /* 2 * PI * r where r = 70 */
+    stroke-dashoffset: 440; /* Start with offset that hides the circle */
+    transition: stroke-dashoffset 0.5s ease;
+  }
+  
+  .gpa-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .gpa-text span {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .gpa-text p {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+/*   
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } */
+  
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #282c34, #61dafb);
+    color: white;
+  }
+  
+  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+  .hero-text {
+    flex: 1;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-btn {
+    background-color: #61dafb;
+    color: #282c34;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-btn:hover {
+    background-color: #21a1f1;
+  }
+  
+  .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-image img {
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-socials {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .hero-socials a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.15s;
+  }
+  
+  .hero-socials a:hover {
+    color: #61dafb;
+  }
+  
